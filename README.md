@@ -1,9 +1,8 @@
-# Vehicle-service-reservation-system
-A secure vehicle service reservation application created using JSP and integrated with cloud-based IDP WSO2 Asgardeo.
+#A secure vehicle service reservation application developed using JSP and integrated with the cloud-based IDP, WSO2 Asgardeo.
 
-Let me show you how to set up this dynamic web application according to your credentials.
+Here’s a guide to setting up this dynamic web application based on your credentials.
 
-First of all, you need to add your database credentials to the DBConnection.java file like below.
+First, update the database credentials in the DBConnection.java file like this:
 
 ```java
 String dbUrl = "jdbc:mysql:<your db url>";
@@ -11,8 +10,7 @@ String dbUser = <database username>;
 String dbPassword = <database password>;
 ```
 
-Then you need to format your reservation-app.properties file according to your WSO2 Asgardeo console's data. You can refer to my blog article to set up this properties file's credentials.
-
+Next, configure the reservation-app.properties file with the details from your WSO2 Asgardeo console. You can refer to my blog post for more information on setting up these credentials.
 
 ```
 # The URL of the SAML 2.0 Assertion Consumer
@@ -78,7 +76,8 @@ PrivateKeyAlias=wso2carbon
 # Private key password to retrieve the private key used to sign AuthnRequest and LogoutRequest messages
 PrivateKeyPassword=wso2carbon
 ```
-Remember to replace SAML2.AssertionConsumerURL, SAML2.SPEntityId, SAML2.IdPEntityId, SAML2.IdPURL, SkipURIs, and IndexPage according to your application credentials registered in the WSO2 Asgardeo console.
-Since this project created using Intellij IDEA you can run this project using IDE. Make sure to add Tomcat server to the IDE and add the project to the server. Then you can run the project using the IDE.
+Ensure you modify the values for SAML2.AssertionConsumerURL, SAML2.SPEntityId, SAML2.IdPEntityId, SAML2.IdPURL, SkipURIs, and IndexPage according to your application credentials from the WSO2 Asgardeo console.
+
+Since this project is built with IntelliJ IDEA, you can run it directly from the IDE. Just make sure to add a Tomcat server in the IDE, deploy the project to the server, and run the project from there.e sure to add Tomcat server to the IDE and add the project to the server. Then you can run the project using the IDE.
 
 
