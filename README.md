@@ -1,4 +1,4 @@
-#A secure vehicle service reservation application developed using JSP and integrated with the cloud-based IDP, WSO2 Asgardeo.
+**A secure vehicle service reservation application developed using JSP and integrated with the cloud-based IDP, WSO2 Asgardeo.**
 
 Here’s a guide to setting up this dynamic web application based on your credentials.
 
